@@ -1,0 +1,412 @@
+/* General Styles */
+body {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    cursor: pointer;
+  
+
+}
+
+h1, h2, h3, h4 {
+    margin: 10px 0;
+    font-family: cursive;
+}
+
+p {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin: 0 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: orange;
+}
+
+.navbar-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width 0.3s;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+}
+
+
+/* Introduction*/
+.intro {
+    padding: 50px 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    text-align: left;
+    gap: 60vh;
+}
+
+.intro-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.intro .highlight {
+    color: orange;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 20px 0;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #666;
+  }
+
+.hire-me-btn {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.hire-me-btn:hover {
+    background-color: rgb(45, 115, 176);
+}
+
+.intro-image {
+    /* flex: 1; */
+    text-align: center;
+}
+
+.intro-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+/* Projects*/
+.projects {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project {
+    max-width: 300px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.explore-btn {
+    display: block;
+    width: 100%;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: rgb(45, 115, 176);
+}
+
+
+/* Services*/
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    max-width: 300px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    text-align: left;
+}
+
+/* Partners*/
+
+.partners {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.partners h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partner {
+    flex: 1 1 150px;
+    max-width: 150px;
+    margin: 10px;
+    padding: 10px;
+   }
+
+.partner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* Testimonial*/
+.testimonials {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    flex: 1 1 300px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.testimonial-author {
+    font-size: 10px;
+    color: #555;
+    text-align: center;
+}
+
+
+/* Contact*/
+.map{
+    float:right;
+    margin-right:50px;
+   }
+
+.contact{
+    padding: 40px;
+    float: left;
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-form button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+    color: #777;
+}
+
+
